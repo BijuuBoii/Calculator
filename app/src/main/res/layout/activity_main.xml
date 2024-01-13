@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="100dp"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="match_parent"
+                android:text="Enter A" />
+
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="match_parent"
+                android:text="Enter B" />
+
+            <TextView
+                android:layout_width="140dp"
+                android:layout_height="match_parent"
+                android:text="Result" />
+        </TableRow>
+
+        <TableRow>
+
+            <EditText
+                android:id="@+id/txtA"
+                android:layout_width="130dp"
+                android:layout_height="match_parent"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/txtB"
+                android:layout_width="130dp"
+                android:layout_height="match_parent"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/txtResult"
+                android:layout_width="130dp"
+                android:layout_height="match_parent"
+                android:inputType="number" />
+        </TableRow>
+    </TableLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="381dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout">
+
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:text="Tổng"/>
+
+        <Button
+            android:id="@+id/btnSub"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:text="Hiệu"/>
+
+        <Button
+            android:id="@+id/btnMulti"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:text="Tích"/>
+
+        <Button
+            android:id="@+id/btnDivide"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:text="Thương"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
